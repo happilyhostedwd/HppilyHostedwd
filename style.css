@@ -1,0 +1,123 @@
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Header */
+
+.main-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.main-header h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.main-header p {
+    color: #ddd;
+    font-size: 15px;
+}
+
+/* Main Content */
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.project-section {
+    margin-bottom: 45px;
+}
+
+.project-section h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.section-description {
+    color: #777;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Project Cards */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.project-card {
+    display: block;
+    background-color: white;
+    padding: 25px;
+    border-radius: 7px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+    transition: 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    border-color: #777;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.project-card span {
+    color: #286a9b;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #888;
+    font-size: 13px;
+}
+
+/* Mobile Layout */
+
+@media (max-width: 600px) {
+    .main-header h1 {
+        font-size: 27px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        margin: 25px auto;
+    }
+}
